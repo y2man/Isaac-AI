@@ -294,8 +294,6 @@ https://python-practice-4cx5.onrender.com/docs
 
 
 
-<!-- Add more screenshots here as you capture them. -->
-
 
 
 \## What I Learned
