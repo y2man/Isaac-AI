@@ -294,7 +294,11 @@ https://python-practice-4cx5.onrender.com/docs
 
 
 
+\### Login and Registration
 
+
+
+!\[Isaac AI Login](screenshots/login-register.png)
 
 \## What I Learned
 
