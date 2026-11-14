@@ -1,4 +1,4 @@
-const API_BASE = "https://python-practice-4cx5.onrender.com";
+const API_BASE = "https://isaac-ai-api.onrender.com";
 const $ = (id) => document.getElementById(id);
 
 const authScreen = $("auth-screen"), appShell = $("app-shell");
