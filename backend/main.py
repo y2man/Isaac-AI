@@ -32,12 +32,19 @@ def create_database_tables():
         Base.metadata.create_all(bind=engine)
 
 
+FRONTEND_URL = os.getenv("FRONTEND_URL", "").rstrip("/")
+
+allowed_origins = [
+    "http://127.0.0.1:5501",
+    "http://localhost:5501",
+]
+
+if FRONTEND_URL:
+    allowed_origins.append(FRONTEND_URL)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://127.0.0.1:5501",
-        "http://localhost:5501",
-    ],
+    allow_origins=allowed_origins,
     allow_credentials=False,
     allow_methods=["GET", "POST", "PATCH", "DELETE", "OPTIONS"],
     allow_headers=["Content-Type", "Authorization"],
